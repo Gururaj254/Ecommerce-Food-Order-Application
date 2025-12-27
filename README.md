@@ -12,6 +12,9 @@ Project Title:
 - Java
 - Spring Boot
 - Spring Cloud (Eureka, Gateway)
+- feign client
+- ResillenceJ Circuit Breaker
+- spring actuator 
 - REST APIs
 - MySQL
 
