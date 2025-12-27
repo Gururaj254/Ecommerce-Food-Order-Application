@@ -12,4 +12,5 @@ public interface MenuClient {
 
     @GetMapping("/menus/restaurant/{restaurantId}")
     List<MenuDTO> getMenuByRestaurant(@PathVariable Long restaurantId);
+
 }

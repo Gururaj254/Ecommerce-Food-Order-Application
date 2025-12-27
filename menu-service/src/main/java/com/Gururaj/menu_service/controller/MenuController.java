@@ -16,11 +16,13 @@ public class MenuController {
         this.menuRepository = menuRepository;
     }
 
+    //add menu
     @PostMapping
     public Menu addMenu(@RequestBody Menu menu) {
         return menuRepository.save(menu);
     }
 
+    //get menu by rest id
     @GetMapping("/restaurant/{restaurantId}")
     public List<Menu> getMenuByRestaurant(@PathVariable Long restaurantId) {
         return menuRepository.findByRestaurantId(restaurantId);
